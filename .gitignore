@@ -1,0 +1,8 @@
+*
+!.gitignore
+!README.md
+!LICENSE
+!gc_map.h
+!gc_map.c
+!/xxHash/
+!xxHash/*
