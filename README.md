@@ -1,4 +1,4 @@
-#Golomb-coded map
+# Golomb-coded map
 
 The Golomb-coded map (GCM) is a [smaller](#smaller), [slower](#slower) alternative to the better-known Bloom filter. This version also has the virtue of [associativity](#associative), whence the designation *map*, rather than *set*.
 
