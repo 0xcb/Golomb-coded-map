@@ -12,7 +12,7 @@ The information-theoretic minimum number of bits needed to represent ![equation]
 
 With a false positive chance above 8.3%, give or take<sup>1</sup>, the GCM is larger than a Bloom filter because adding ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20%281-%5Csqrt%5Bn%5D%7B1-%5Cepsilon%7D%29%5E%7B-1%7D) results in a larger value than multiplying by ![equation](http://latex.codecogs.com/gif.latex?%5Cinline%20%5Clog_%7B2%7De). But the smaller the false positive chance, the more the GCM approaches the information-theoretic minimum. At a false positive rate of 1 in 2<sup>40</sup> (false positive chance of 0.00000000000091%), for example, the Bloom filter needs 57.71 bits per entry, while the GCM needs only 41.59.
 
-1. For completeness' sake: ![equation](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cepsilon%20%3D%20%5Cleft%20%28%202%5E%7B%5Cfrac%7B%281-%5Csqrt%5Bn%5D%7B1-%5Cepsilon%20%7D%29%5E%7B-1%7D%7D%7B%5Clog_2%28e%29-1%7D%7D%20%5Cright%20%29%5E%7B-1%7D%20%5Capprox%208.3)
+1. For completeness' sake: ![equation](http://latex.codecogs.com/png.latex?%5Cinline%20%5Cepsilon%20%3D%20%5Cleft%20%28%202%5E%7B%5Cfrac%7B%281-%5Csqrt%5Bn%5D%7B1-%5Cepsilon%20%7D%29%5E%7B-1%7D%7D%7B%5Clog_2%28e%29-1%7D%7D%20%5Cright%20%29%5E%7B-1%7D%20%5Capprox%200.083)
 
 ## <a name="slower"/> How much slower?
 
