@@ -10,7 +10,7 @@ That depends on the false positive chance.
 
 The information-theoretic minimum number of bits needed to represent $n$ patterns with false positive chance $\epsilon$ is $n\log_2{\frac{1}{\epsilon}}$. A Bloom filter, however, requires approximately $n\log_2{\frac{1}{\epsilon}}\log_{2}e$ bits, a penalty just north of 44%. The GCM, on the other hand, needs $n\left(\log_2{\frac{1}{\epsilon}}+\frac{e}{e-1}\right)$ bits. The difference in size is therefore contingent on the false positive chance, which determines whether adding $\frac{e}{e-1}$ or multiplying by $\log_{2}e$ is greater.
 
-With a false positive chance above 8.4%, give or take$^1$, the GCM is larger than a Bloom filter because adding $\frac{e}{e-1}$ results in a larger value than multiplying by $\log_{2}e$. But the smaller the false positive chance, the more the GCM approaches the information-theoretic minimum. At a false positive rate of 1 in $2^{40}$ (false positive chance of 0.00000000000091%), for example, the Bloom filter needs 57.71 bits per entry, while the GCM needs only 41.59.
+With a false positive chance above 8.4%, give or take $^1$, the GCM is larger than a Bloom filter because adding $\frac{e}{e-1}$ results in a larger value than multiplying by $\log_{2}e$. But the smaller the false positive chance, the more the GCM approaches the information-theoretic minimum. At a false positive rate of 1 in $2^{40}$ (false positive chance of 0.00000000000091%), for example, the Bloom filter needs 57.71 bits per entry, while the GCM needs only 41.59.
 
 1. $\left(^\frac{e}{e-1}/\_{\log_{2}e}\right)^{-1} \approx 0.084$
 
